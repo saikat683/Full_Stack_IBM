@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*p{
+            background-color: aqua;
+        }
+        .para3{
+           background-color: blanchedalmond;
+        }
+        .para4{
+            background-color: black;
+        }
+        #para{
+            background-color: blueviolet;
+        }*/
+        #parent p{
+            background-color: aqua;
+        }
+        #parent2 >p {
+            background-color: aqua;
+        }
+        #parent3>:nth-child(1)~h1{
+            background-color: brown;
+        }
+        #parent3>div>#myId~h2{
+            background-color: pink;
+
+        }
+        input[type="password"]{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <p>I am a paragraph</p>
+    </div>
+    <div>
+        <p>I am a paragraph</p>
+    </div>
+    <div>
+        <p class="para3">I am a paragraph</p>
+    </div>
+    <div>
+        <p id="para" class="para4">I am a paragraph</p>
+    </div> -->
+    <div id="parent">
+        <p>I am paragraph</p>
+        <div>
+            <p>Child 1</p>
+            <p>Child 2</p>
+            <div>
+                <p>Grand child 1</p>
+                <p> Grand Child 2</p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="parent2">
+        <p>I am paragraph</p>
+        <div>
+            <p>Child 1</p>
+            <p>Child 2</p>
+            <div>
+                <p>Grand child 1</p>
+                <p> Grand Child 2</p>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <div id="parent3">
+        <p>Paragraph 1</p>
+        <h1>Heading 1</h1>
+        <h1>Heading 2</h1>
+        <p> Paragraph2</p>
+        <p>Paragraph2</p>
+        <div>
+            <p id="myId">Grand Child1</p>
+            <h2>Heading 3</h2>
+            <p>Grand child2</p>
+            <h2>Heading 4</h2>
+        </div>
+    </div>
+    <input type="password"placeholder="password">
+    <hr>
+    <div style="height:200px;width:200px;border:2px solid black;overflow:auto">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim eligendi minima commodi laboriosam earum suscipit provident ea quia quo quas quod aliquam ipsum, porro fugit facere cupiditate. Ullam, in beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim at cumque asperiores laboriosam ad eius, alias facilis qui maxime itaque ipsum repellat id iusto soluta quaerat consectetur nobis rem cum.</p>
+
+    </div>
+    
+</body>
+</html>
