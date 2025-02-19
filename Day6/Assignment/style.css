@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+}
+.body{
+    background-color: #e8f8fd;
+}
+.navbar{
+    height:70px;
+    width:100%;
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(255,255,255);
+    
+}
+.navEle{
+    border:none;
+}
+.firstNav{
+    width:100px;
+}
+.lastNav{
+    width:100px;
+}
+.eight{
+    width:107px;
+    font-size:20px;
+    background-color: #002970;
+    color:white;
+    display:flex;
+    /* padding-left:10px; */
+    padding-bottom: 5px;
+    border-radius: 50px;
+    height:30px;
+
+}
+.seven{
+    display:flex;
+    font-size: 17px;
+}
+#navText{
+    padding-left:10px;
+    font-weight: 600;
+}
+#navImg{
+    padding-top:0px;
+    padding-right:4px;
+    
+}
+#navPara{
+    padding-top:8px;
+    font-size: 18px;
+    padding-left: 0px;
+}
+
+select{
+    border:none;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* Starting the main body portion */
+.main{
+    height:350px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8f8fd;
+
+}
+.mainFirst{
+    height:350px;
+    width:5%;
+    
+}
+.mainSecond{
+    background-image: url("https://assetscdn1.paytm.com/images/catalog/view_item/2890666/10903120897665220.jpg");
+    background-size: cover;
+    border-radius:10px;
+    height:320px;
+    width:70%;
+}
+.mainThird{
+    height:350px;
+    width:6%;
+}
+.mainFirst>img{
+    margin-top:160px;
+    rotate: 180deg;
+}
+.mainThird>img{
+  margin-top:160px;
+  padding-left: 25px;
+}
+.functions{
+    width:100%;
+    height:330px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #e8f8fd;
+}
+.recharges{
+    width:40%;
+    height:250px;
+    margin-right:6px;
+    background-color: rgb(255,255,255);
+}
+.bill{
+    width:40%;
+    height:250px;
+    margin-left:6px;
+    background-color: rgb(255,255,255);
+    
+}
+.recharge1{
+    width:100%;
+    height:80px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.recharge1>h3{
+    padding-left:20px;
+}
+.recharge2{
+    width:100%;
+    height:180px;
+    display:flex;
+}
+.recharge3{
+    width:100%;
+    height:70px;
+    background-image: url("https://assetscdn1.paytm.com/images/catalog/view/1732260479349.png");
+    background-size:contain;
+
+}
+.subDiv{
+    width:25%;
+    height:180px;
+    text-align: center;
+}
+.subDiv>img{
+    margin-top: 10px;
+    margin-left:25px;
+    height:90px;
+    width:65%
+
+}
+.subDiv>span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.bill1{
+    width:100%;
+    height:80px;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.bill1>h3{
+    padding-left:20px;
+}
+.bill2{
+    width:100%;
+    height:180px;
+    display:flex;
+
+}
+.bill3{
+    width:100%;
+    height:70px;
+    background-image: url("https://assetscdn1.paytm.com/images/catalog/view/1732260510732.png");
+    background-size:contain;
+}
+.Bsub{
+    width:25%;
+    height:180px;
+    text-align: center;
+
+}
+.Bsub>img{
+    margin-top: 10px;
+    margin-left:25px;
+    height:90px;
+    width:65%
+
+}
+.Bsub>span{
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 15px;
+
+}
