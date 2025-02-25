@@ -65,6 +65,250 @@ select{
     font-weight: 600;
     font-family: sans-serif;
 }
+/* Booking Portions */
+.Bookings{
+    height:60px;
+    width:100%;
+    /* border:2px solid red; */
+    background-color: #e8f8fd;
+    display:flex;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 15%;
+    color:#002970
+    
+}
+.bookingDiv{
+    display:flex;
+    margin-left: 20px;
+    height:58px;
+    /* border:2px solid black; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.hov:hover{
+    border-bottom: 3px solid #00B8F5;
+}
+.bookingDiv>img{
+    height:24px;
+    width:24px;
+}
+.bookingDiv>span{
+    padding-bottom: 10px;
+}
+#paytmTravel{
+    height:22px;
+    width:144px;
+    margin-left:510px;
+}
+#paytmTravel:hover{
+    border:none;
+}
+/* #BookingText1{
+    padding-top:5px;
+}
+#BookingText2{
+    padding-top:5px;
+}
+#BookingText3{
+    padding-top: 10px;
+}
+#BookingText4{
+    padding-top: 2px;
+} */
+.Booking2{
+    height:200px;
+    width:75%;
+    border:1px solid #0F0F0f8A;
+    background-color: #FFFFFF;
+    margin:auto;
+    border-radius: 10px;
+}
+.Sone{
+    height:50px;
+    width:100%;
+    /* border:1px solid black; */
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.Sone>input{
+    margin:15px 0px 0px 20px;
+}
+.Stwo{
+    height:70px;
+    width:100%;
+    /* border:1px solid red; */
+    display:flex;
+}
+.midSubDiv{
+    height:65px;
+    width:17%;
+    /* border:1px solid blue; */
+    font-family: sans-serif;
+
+}
+.book2MidSubdiv1>p{
+    font-size: 13px;
+    color:#0F0F0f8A;
+    margin: 10px 0px 0px 20px;
+}
+.book2MidSubdiv1>h1{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.book2MidSubdiv2>p{
+    font-size: 13px;
+    color:#0F0F0f8A;
+    margin: 10px 0px 0px 20px;
+}
+.book2MidSubdiv2>div>h1{
+    font-size: 16px;
+    padding-top: 3px;
+    margin-top: 5px;
+    /* padding-bottom: 5px; */
+}
+.book2MidSubdiv2>div>img{
+    margin-left:20px;
+    margin-top: 5px;
+}
+.book2MidSubdiv2>div{
+    display:flex;
+}
+.book2MidSubdiv3{
+    border-left: 1px solid #0F0F0f8A;
+}
+.book2MidSubdiv4{
+    border-left: 1px solid #0F0F0f8A;
+}
+.book2MidSubdiv5{
+    border-left: 1px solid #0F0F0f8A;
+}
+
+.book2MidSubdiv3>p{
+    font-size: 13px;
+    color:#0F0F0f8A;
+    margin: 10px 0px 0px 20px;
+}
+.book2MidSubdiv3>h1{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.book2MidSubdiv4>p{
+    font-size: 13px;
+    color:#0F0F0f8A;
+    margin: 10px 0px 0px 20px;
+}
+.book2MidSubdiv4>h1{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color:#00BAF2;
+}
+.book2MidSubdiv5>p{
+    font-size: 13px;
+    color:#0F0F0f8A;
+    margin: 10px 0px 0px 20px;
+}
+.book2MidSubdiv5>select{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+.book2MidSubdiv5{
+    width:19%;
+}
+.book2MidSubdiv6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book2MidSubdiv6>div{
+    width:160px;
+    height:60px;
+    background-color: #00BAF2;
+    border-radius: 5px;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Sthree{
+    height:80px;
+    width:100%;
+    /* border:1px solid greenyellow; */
+    display:flex;
+    align-items: center;
+}
+.lowSubDiv{
+    width:100px;
+    height:60px;
+    border:1px solid #0F0F0f8A;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.lowSubDiv1{
+    width:200px;
+    border:none;
+}
+.lowSubDiv1>p{
+    font-size: 14px;
+    font-family: sans-serif;
+    color:#0F0F0f8A;
+    margin:10px 0px 0px 20px;
+}
+.lowSubDiv1>div{
+    display:flex;
+}
+.lowSubDiv1>div>div>img{
+    height:14px;
+    width:14px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.lowSubDiv1>div>div>p{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color:#27AE60;
+    margin-left: 4px;
+}
+.lowSubDiv2>h4{
+    margin:10px 0px 0px 7px;
+    font-size: 13px;
+}
+.lowSubDiv2>p{
+    font-size: 11px;
+    margin:5px 0px 0px 7px;
+    color:#0F0F0f8A;
+}
+.lowSubDiv3>h4{
+    margin:10px 0px 0px 7px;
+    font-size: 13px;
+}
+.lowSubDiv3>p{
+    font-size: 11px;
+    margin:5px 0px 0px 7px;
+    color:#0F0F0f8A;
+}
+.lowSubDiv4>h4{
+    margin:10px 0px 0px 7px;
+    font-size: 13px;
+}
+.lowSubDiv4>p{
+    font-size: 11px;
+    margin:5px 0px 0px 7px;
+    color:#0F0F0f8A;
+}
 /* Starting the main body portion */
 .main{
     height:350px;
@@ -474,6 +718,7 @@ select{
    height:470px;
    width:470px;
 }
+/* page 5 */
 .page5{
     height:548px;
     width:82%;
