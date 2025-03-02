@@ -1,0 +1,85 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+.navBar{
+    height:70px;
+    width:100%;
+    border:1px solid blue;
+    background-color: antiquewhite;
+}
+.navBar>h1{
+    text-align: center;
+}
+.navBar>button{
+    width:10%;
+    height:30px;
+    font-weight: 600;
+    font-size:17px ;
+    background-color:#0CAFFF;
+    color:white;
+    border-radius: 10px;
+    border:none;   
+    cursor:pointer;
+    margin-left: 20px;
+}
+#info{
+    height:320px;
+    width:30%;
+    border:1px solid blue;
+    margin-top: 2px;
+    background-color: rgba(128, 128, 128, 0.126);
+    margin-left: 20px;
+}
+#info input{
+    width:90%;
+    height:40px;
+    padding:10px;
+    margin:10px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+}
+#info button{
+    width:30%;
+    height:30px;
+    font-weight: 600;
+    font-size:17px ;
+    background-color:#0CAFFF;
+    color:white;
+    border-radius: 10px;
+    border:none;   
+    cursor:pointer;
+    margin-left: 10px;
+}
+.priceDiv{
+    font-size: 18px;
+    height:50px;
+    width:100%;
+    background-color: rgba(128, 128, 128, 0.126);
+    margin-top: 10px;
+    /* margin-left:10px ; */
+    text-align: center;
+}
+.priceDiv>select{
+    width:20%;
+    height:30px;
+    font-size: 18px;
+    margin-left: 3%;
+    text-align: center;
+    margin-top: 10px;
+}
+.priceDiv>button{
+    width:15%;
+    height:30px;
+    font-weight: 600;
+    font-size:17px ;
+    background-color:#0CAFFF;
+    color:white;
+    border-radius: 10px;
+    border:none;   
+    cursor:pointer;
+    margin-left: 30px;
+    margin-top: 10px;
+
+}

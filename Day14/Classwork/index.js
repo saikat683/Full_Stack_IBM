@@ -161,6 +161,7 @@ const products=[
       "image": "https://assets.ajio.com/medias/sys_master/root/20230629/nDDs/649cd4e8a9b42d15c91c7cc3/-473Wx593H-466021226-black-MODEL.jpg"
     }
 ];
+
 function showData(array2){
 
     array2.forEach((el,index)=>{
@@ -179,7 +180,7 @@ function showData(array2){
          price.innerText=el.price;
     
          let rating=document.createElement("h3");
-         rating.innerText=el.rating;
+         rating.innerText = `⭐ ${el.rating}`;
     
          let button=document.createElement("button");
          button.innerText="Add To cart";
@@ -190,21 +191,34 @@ function showData(array2){
          productBox.append(heading,img,name,price,rating,button);
          document.getElementById("products").append(productBox);
     });
+    
 }
+
 showData(products);
-let sort=document.getElementById("sort");
-sort.addEventListener("select",function(){
-  
-})
+
+
 let cart=[];
 function addToCart(el,index){
  
   cart.push(el);
   localStorage.setItem("cartData",JSON.stringify(cart));
-  // console.log(cart);
-  // console.log(getData());
 }
 let cartButton=document.getElementById("cart");
 cartButton.addEventListener("click",function(){
   window.location.href="cart.html";
-})
+});
+
+//sorting of products
+let select=document.getElementById("sort");
+    sort.addEventListener("click",function(){
+    const selected=select.options[select.selectedIndex].value;
+    if(selected=="ascending"){
+      products.sort((a,b)=>a.name.localeCompare(b.name));
+    }
+    if(selected=="descending"){
+      products.sort((a,b)=>b.name.localeCompare(a.name));
+    }
+    showData(products);
+    // products.sort((a,b)=>a.name.localeCompare(b.name));
+    // console.log(products);
+});
