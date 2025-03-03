@@ -41,6 +41,14 @@ function getData() {
   }
 }
 getData();
+let cartDisplay = document.getElementById("cartContent");
+function removeFromCart(el,index){
+  let data=JSON.parse(localStorage.getItem("cartData"));
+  data.splice(index,1);
+  data=localStorage.setItem("cartData",JSON.stringify(data));
+  cartDisplay.innerHTML="";
+  getData();
+}
 // let Purchase=document.querySelector(".Purchase");
 // Purchase.addEventListener("click",function(){
 //   window.location.href="checkout.html";
@@ -53,11 +61,11 @@ let home=document.getElementById("home");
 home.addEventListener("click",function(){
   window.location.href="index.html";
 });
-let cartDisplay = document.getElementById("cartContent");
-function removeFromCart(el, index) {
-  let data = JSON.parse(localStorage.getItem("cartData"));
-  data.splice(index, 1);
-  data = localStorage.setItem("cartData", JSON.stringify(data));
-  cartDisplay.innerHTML = "";
-  getData();
-}
+// let cartDisplay = document.getElementById("cartContent");
+// function removeFromCart(el, index) {
+//   let data = JSON.parse(localStorage.getItem("cartData"));
+//   data.splice(index, 1);
+//   data = localStorage.setItem("cartData", JSON.stringify(data));
+//   cartDisplay.innerHTML = "";
+//   getData();
+// }
