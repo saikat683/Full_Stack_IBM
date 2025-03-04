@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+#navBar{
+    position: sticky;
+    top:0px;
+    width:100%;
+    height:110px;
+    border:0.5px solid black;
+    text-align: center;
+    background-color: antiquewhite;
+   
+}
+#navBar>h1{
+    margin-top: 1%;
+}
+#navBar>input{
+    width:20%;
+    height:34px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 1%;
+    border-radius: 10px;
+    border:none;
+}
+#navBar>select{
+    width:20%;
+    height:34px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 1%;
+    border-radius: 10px;
+    border:none;
+}
+#navBar>button{
+    width:10%;
+    height:34px;
+    font-size: 17px;
+    background-color:#0CAFFF;
+    color:white;
+    font-weight: 600;
+    border-radius: 10px;
+    border:none;
+    cursor:pointer;
+}
+#AllContent{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:15px;
+    background-color: rgba(128, 128, 128, 0.126);
+    /* margin-top: 3px; */
+}
+.EachProduct{
+    border:2px solid rgba(0, 132, 255, 0.906);
+    padding:10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+}
+.EachProduct>img{
+    height:200px;
+    width:100%;
+    object-fit: contain;
+}
+.EachProduct>button{
+    width:30%;
+    height:30px;
+    font-weight: 600;
+    font-size:17px ;
+    background-color:#0CAFFF;
+    color:white;
+    border-radius: 10px;
+    border:none;   
+    cursor:pointer;
+}
+.EachProduct>h3,button{
+    margin-left: 20px;
+}
+.EachProduct:hover{
+    box-shadow: 10px 10px 10px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
