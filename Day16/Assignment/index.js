@@ -19,8 +19,7 @@ async function fetchData() {
         let button1 = document.createElement("button");
         button1.innerText = "View Details";
         button1.addEventListener("click", () => {
-          window.location.href = "productDetails.html";
-          showData(el, index);
+          saveToLocalStorage(el, index);
         });
 
         let AllProducts = document.getElementById("AllProducts");
@@ -29,35 +28,6 @@ async function fetchData() {
       });
     }
     displayData(data2);
-
-    // function showData(el, index) {
-    //     console.log("Good Morning");
-    //   let div = document.createElement("div");
-    //   div.className = "product2";
-    //   let image = document.createElement("img");
-    //   image.src = el.image;
-    //   let name = document.createElement("h3");
-    //   name.innerText = el.title;
-    //   let price = document.createElement("h3");
-    //   price.innerText = `Price: $${el.price}`;
-    //   let category = document.createElement("h3");
-    //   category.innerText = `Category: ${el.category}`;
-    //   let rating = document.createElement("h3");
-    //   rating.innerText = `Rating: ⭐${el.rating.rate}, Count:${el.rating.count}`;
-    //   //   let button1 = document.createElement("button");
-    //   //   button1.innerText = "";
-    //   //   button1.addEventListener("click", () => {
-    //   //     console.log(el, index);
-    //   //   window.location.href="productDetails.html";
-    //   //   });
-
-    //   let product2 = document.getElementById("singleProduct");
-    //   div.append(image, name, price, category, rating);
-    //   product2.append(div);
-    // }
-
-    
-
     //Filtering products based on elements
     let filterByPrice = document.getElementById("filterByPrice");
     filterByPrice.addEventListener("change", function () {
@@ -109,8 +79,45 @@ async function fetchData() {
       AllContent.innerHTML = "";
       displayData(filtered);
     });
+
+    //searching by debouncing method
+
+    function getData() {
+      // console.log(searchBar.value);
+      let query = document.getElementById("searchBar").value.toLowerCase();
+      let filtered = data2.filter((p) => p.title.toLowerCase().includes(query));
+      let AllContent = document.getElementById("AllProducts");
+      AllContent.innerHTML = "";
+      displayData(filtered);
+    }
+    const debounce = function (fn, delay) {
+      let timer;
+      return function () {
+        let context = this,
+          args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn.apply(context, args);
+        }, delay);
+      };
+    };
+    const searchFunction = debounce(getData, 500);
+    let searchBar = document.getElementById("searchBar");
+    searchBar.addEventListener("input", searchFunction);
   } catch (e) {
     console.log(e);
   }
 }
 fetchData();
+
+let users=document.getElementById("users");
+users.addEventListener("click",function(){
+    window.location.href="user.html";
+});
+let cart = [];
+function saveToLocalStorage(el, index) {
+  cart.push(el);
+  localStorage.setItem("cart",JSON.stringify(cart));
+  // alert("dava saved to local storage");
+  window.location.href="productDetails.html";
+}

@@ -26,11 +26,13 @@
     cursor:pointer;
     margin-left: 20px;
 }
-.product{
-    text-align: center;
-}
-.product>img{
-  height:400px;
-  width:400px;
-
+.eachUser{
+    height:300px;
+    width:400px;
+    border:2px solid red;
+    padding:30px 0px 0px 40px;
+    margin-left: 30px;
+    margin-top:10px;
+    background-color: #0cafff;
+    color:white;
 }
