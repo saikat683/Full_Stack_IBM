@@ -9,10 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=movie"
-    />
   </head>
   <body>
     <header>
@@ -26,8 +22,9 @@
           />
         </div>
         <div id="nav2">
-          <input type="text" placeholder="search" />
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="input"type="text" placeholder="search" />
+          <!-- <button id="search">Search</button> -->
+          <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div id="nav4"><i class="fa-solid fa-microphone"></i></div>
         <div id="nav5"><i class="fa-solid fa-plus"></i>&nbsp;&nbsp;Create</div>
@@ -42,7 +39,7 @@
     </header>
     <div class="main">
       <div class="sideBar">
-        <div class="bar1">
+        <div class="bar1 bar">
           <div>
             <i class="fa-solid fa-house"></i>
             <span>Home</span>
@@ -57,7 +54,7 @@
           </div>
         </div>
         <hr />
-        <div class="bar2">
+        <div class="bar2 bar">
           <div>You ></div>
           <div>
             <i class="fa-solid fa-clock-rotate-left"></i>
@@ -85,7 +82,7 @@
           </div>
           <hr />
         </div>
-        <div class="bar3">
+        <div class="bar3 bar">
           <div>Subscription</div>
           <div>
             <i class="fa-solid fa-circle-user"></i>
@@ -101,7 +98,7 @@
           </div>
           <hr />
         </div>
-        <div class="bar4">
+        <div class="bar4 bar">
           <div>
             <i class="fa-solid fa-fire"></i>
             <span>Trending</span>
@@ -148,7 +145,7 @@
           </div>
           <hr />
         </div>
-        <div class="bar5">
+        <div class="bar5 bar">
           <div>More From Youtube</div>
           <div>
             <i class="fa-brands fa-youtube"></i>
@@ -168,7 +165,7 @@
           </div>
           <hr />
         </div>
-        <div class="bar6">
+        <div class="bar6 bar">
           <div>
             <i class="fa-solid fa-gear"></i>
             <span>Setting</span>
@@ -187,7 +184,7 @@
           </div>
           <hr />
         </div>
-        <div class="bar7">
+        <div class="bar7 bar">
           <p>
             About Press Copyright <br />Contact us Creator Advertise<br />Developers<br /><br />
             Terms PrivacyPolicy & Safety <br />How YouTube works<br />Test new
@@ -200,7 +197,7 @@
         <div class="horizontal">
           <div class="mini">All</div>
           <div class="mini">Music</div>
-          <div class="mini">Arijit Singh</div>
+          <div class="mini">ArijitSing</div>
           <div class="mini">PlatList</div>
           <div class="mini">Albums</div>
           <div class="mini">Mixes</div>
@@ -210,18 +207,13 @@
           <div class="mini">Chants</div>
           <div class="mini">Mantras</div>
           <div class="mini">Thrillers</div>
-          <div class="mini">Ambient Music</div>
           <div class="mini">Cricket</div>
         </div>
-        <div class="horizontal2">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+        <div id="horizontal2">
+          
         </div>
       </div>
     </div>
   </body>
 </html>
+<script src="index.js"></script>

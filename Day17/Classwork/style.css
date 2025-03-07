@@ -186,17 +186,19 @@
 }
 
 .horizontal {
-  height: 40px;
+  height: 50px;
   width: 100%;
   border: 1px solid black;
   position: sticky;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: thin;
 
 }
 
 .mini {
-  height: 40px;
+  height: 50px;
   width: 90px;
   border: 1px solid black;
   display: flex;
@@ -214,4 +216,13 @@
     /* height:200px;
     width:400px;
     border:2px solid red; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    
+}
+.box{
+  height:300px;
+  border:1px solid red;
+  border-radius: 10px;
 }
