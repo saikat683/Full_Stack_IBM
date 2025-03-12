@@ -1,0 +1,37 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+#container{
+    height:600px;
+    width:60%;
+}
+#container>iframe{
+    border:2px solid red;
+    border-radius: 10px;
+    width:100%;
+}
+#suggestionBox{
+    height:800px;
+    width:400px;
+    border:2px solid red;
+    margin-left: 7%;
+    overflow: scroll;
+    border-radius: 10px;
+    scrollbar-width: thin;
+    /* text-align: center; */
+
+}
+.bigContainer{
+    display:flex;
+}
+.suggestionVideo{
+    border:2px solid black;
+    margin:10px;
+    border-radius: 10px;
+    
+}
+.suggestionVideo>img{
+    width:100%;
+}
