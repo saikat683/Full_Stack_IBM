@@ -1,4 +1,4 @@
-let API_KEY = "AIzaSyBGkvDY2HiKW1hAjt5OpQUjA8j6HHOa7aQ";
+let API_KEY = "Write Your API Key";
 
 let lower_body = document.getElementById("lower-body");
 

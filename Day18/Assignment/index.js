@@ -1,4 +1,4 @@
-let API_KEY="AIzaSyC8o6jWQ0tHr_HmJlj16OhgirwUPcBk5Os";
+let API_KEY="Write Your API Key";
 let button=document.getElementById("search");
 let body=document.getElementById("horizontal2");
 let search_term=document.getElementById("input").value ||"Cricket";
