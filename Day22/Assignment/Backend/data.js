@@ -1,0 +1,32 @@
+const products = [
+    { id: "550e8400-e29b-41d4-a716-446655440000", name: "Wireless Headphones", price: 59.99, category: "Electronics" },
+    { id: "6cd3556d-1eb6-4b4b-b4a3-1ad798c119a5", name: "Smartwatch", price: 129.99, category: "Wearables" },
+    { id: "8e7f5d87-35a3-4c1a-a6a2-f7e241c0a0fd", name: "Gaming Mouse", price: 39.99, category: "Accessories" },
+    { id: "2a4e3d6f-05e1-4b98-bfc1-5c3bcd3328da", name: "Mechanical Keyboard", price: 79.99, category: "Accessories" },
+    { id: "f4b3b5b7-4ef7-40c3-b4a0-ec3e885a67a1", name: "4K Monitor", price: 299.99, category: "Electronics" },
+    { id: "9a0a6f6b-3128-4485-8102-bc62f6c3a5d1", name: "Bluetooth Speaker", price: 49.99, category: "Audio" },
+    { id: "b7d1e3f4-274a-456c-9b9d-5f7c6a7d8e6b", name: "External SSD 1TB", price: 119.99, category: "Storage" },
+    { id: "5d6f3a2e-8c9a-4b87-b8e1-c3a9f7d1e0b6", name: "USB-C Hub", price: 29.99, category: "Accessories" },
+    { id: "f2b6e3d1-847a-4b9c-bc37-9e8d5f6c0a1d", name: "Laptop Stand", price: 39.99, category: "Accessories" },
+    { id: "a8d4f3b7-19c2-456a-bf23-1c7e9a5d6e8b", name: "Portable Charger", price: 35.99, category: "Power" },
+    { id: "7c9d5b4a-35e8-42d3-a6f2-8b7e4c1a9f6d", name: "Wireless Mouse", price: 25.99, category: "Accessories" },
+    { id: "3e5b4c9a-7d8f-42a3-bf16-2c8e7a5d1f6b", name: "Noise Cancelling Earbuds", price: 89.99, category: "Audio" },
+    { id: "c1d5f3b7-8a9e-4b6d-a37c-9f2e4c8a5d1b", name: "Smart Light Bulb", price: 19.99, category: "Smart Home" },
+    { id: "4b7d1e3f-9a5c-4c8a-b2e6-5d1f6b7a3c9d", name: "HD Webcam", price: 59.99, category: "Accessories" },
+    { id: "6a3e7d5b-9c1f-42a8-bf26-8b7c4d1f9e5b", name: "Ergonomic Chair", price: 199.99, category: "Furniture" },
+    { id: "8b5d7a3e-9f1c-4b6a-bf28-2c7e9d1f4c8a", name: "Smart Thermostat", price: 149.99, category: "Smart Home" },
+    { id: "2d3e9a7b-5f1c-4b8a-b6f2-7c4d1f9e5b7a", name: "Fitness Tracker", price: 79.99, category: "Wearables" },
+    { id: "9c5d7a3e-1f4b-4b8a-bf26-8b7e9d1f2c4a", name: "Wireless Charger", price: 29.99, category: "Power" },
+    { id: "5a3e7d9b-1f4c-4b6a-bf28-2c7e5d1f9b7a", name: "Electric Toothbrush", price: 49.99, category: "Personal Care" },
+    { id: "7d5b3e9a-1f4c-4b8a-bf26-8b7e2c9d1f4a", name: "Smart Door Lock", price: 179.99, category: "Smart Home" },
+    { id: "3a9e5d7b-1f4c-4b8a-bf28-2c7e4d1f9b7a", name: "Noise Cancelling Headphones", price: 199.99, category: "Audio" },
+    { id: "c7d5b3e9-1f4c-4b8a-bf26-8b7e2c9d1f4a", name: "Smart Plug", price: 14.99, category: "Smart Home" },
+    { id: "9b5d3e7a-1f4c-4b8a-bf28-2c7e5d1f9a4a", name: "Robot Vacuum", price: 249.99, category: "Smart Home" },
+    { id: "6d3e5b9a-1f4c-4b8a-bf26-8b7e2c9d1f4a", name: "Dash Cam", price: 89.99, category: "Automotive" },
+    { id: "5b7d3e9a-1f4c-4b8a-bf28-2c7e9d1f4a3a", name: "Streaming Stick", price: 49.99, category: "Entertainment" },
+    { id: "3c9e7d5b-1f4c-4b8a-bf26-8b7e2d1f9a4a", name: "Wireless Keyboard", price: 59.99, category: "Accessories" },
+    { id: "7a5d3e9b-1f4c-4b8a-bf28-2c7e5d1f9c4a", name: "Electric Scooter", price: 299.99, category: "Outdoor" },
+    { id: "9d5b3e7a-1f4c-4b8a-bf26-8b7e2c9a1f4a", name: "Portable Projector", price: 199.99, category: "Entertainment" }
+  ];
+  
+module.exports=products;
